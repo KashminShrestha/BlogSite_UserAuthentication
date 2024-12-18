@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+
+[dev-packages]
+
+[scripts]
+a = "python manage.py createsuperuser"
+m = "python manage.py migrate"
+ms = "python manage.py makemigrations"
+s = "python manage.py runserver"
+t = "python manage.py test"
+
+[requires]
+python_version = "3.13"
